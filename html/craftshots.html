@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SpaceCruiser</title>
+    <style>
+    	* { padding: 0; margin: 0; }
+    	#myCanvas { 
+		  display: block;
+		  margin: 0 auto; 
+		  background-image: url("https://images.wallpaperscraft.com/image/starry_sky_space_galaxy_118132_1920x1080.jpg");
+		  height: 100%;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  }
+		/* 90, 88, 117 */
+        h3 {
+			color: green;
+		}
+        .container {
+			align-items: center;
+		}
+		#gameOverMenu {
+			position: absolute;
+			top: 20vh;
+			left: 24vw;
+			width: 50vw;
+			height: 50vh;
+			text-align: center;
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			letter-spacing: 1.3px;
+			font-size: 3vw;
+			justify-content: center;
+			text-align: center;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		button:link {
+            text-decoration: none;
+        }
+		button:hover {
+            text-decoration: none;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+		button{
+			margin-top:45px;
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		#score {
+
+			width: auto;
+			height: 2vh;
+			position: absolute;
+			top: 3vh;
+			left: 2.8vw;
+			color: white;
+			font-size: 3.3vh;
+			font-family: arial, helvetica, tahoma, sans-serif;
+			}
+    </style>
+</head>
+<body>
+    <div class="container">
+		<canvas id="myCanvas"></canvas>
+		<div id="score">SCORE : 0</div>
+		<div id="gameOverMenu">
+			<h1>GAME OVER</h1>
+			<p id="finalscore">Your score is</p>
+			<button class="gameOver" id="gameOverBtn">Restart</button>
+		  </div>
+
+	</div>
+<script type="text/javascript" src="../js/shots.js"> </script>
+</body>
+</html>
