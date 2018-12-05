@@ -243,11 +243,14 @@ function spacecraft(){
 
 //Prototype for scpacecraft
 this.drawSpacecraft=function(){
+    
     var z=canvas.width-40;
     if(on){
         this.moveCraft();
     }
-    ctx.drawImage(img,x,y,70,70);
+    console.log(x);
+    console.log(y);
+    ctx.drawImage(img,bulletx-35,bullety,70,70);
     ctx.stroke();
     ctx.closePath();
 
